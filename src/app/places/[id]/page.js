@@ -1,0 +1,53 @@
+import Image from "next/image";
+import { places } from "@/data";
+
+const PlaceDetailPage = async ({ params }) => {
+
+  const { id } = await params;
+
+  const place = places.find(
+    (place) => place.id === Number(id)
+  );
+
+  if (!place) {
+    return <h1>Place Not Found</h1>;
+  }
+
+  return (
+    <div className="max-w-5xl mx-auto p-8">
+
+      <Image
+        src={place.image}
+        alt={place.name}
+        width={1000}
+        height={500}
+        className="w-full h-[500px] object-cover rounded-lg"
+      />
+
+      <h1 className="text-5xl font-bold mt-6">
+        {place.name}
+      </h1>
+
+      <p className="text-xl text-gray-600 mt-2">
+        📍 {place.location}
+      </p>
+
+      <p className="mt-6 text-lg">
+        {place.description}
+      </p>
+
+      <div className="mt-6 space-y-2">
+        <p>
+          ⭐ Rating: {place.rating}
+        </p>
+
+        <p>
+          🗓 Best Time To Visit: {place.bestTimeToVisit}
+        </p>
+      </div>
+
+    </div>
+  );
+};
+
+export default PlaceDetailPage;
