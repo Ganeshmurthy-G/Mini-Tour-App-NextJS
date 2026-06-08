@@ -37,7 +37,7 @@ export default function PlacesPage() {
                 {place.name},{place.location}
               </p>
 
-              <p>Have a goodtime!</p>
+              <p>Have a goodtime folks!</p>
 
               <Link
                 href={`/places/${place.id}`}
