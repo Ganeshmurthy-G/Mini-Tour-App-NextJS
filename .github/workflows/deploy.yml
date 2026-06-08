@@ -12,9 +12,17 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    env:
+        APP_NAME: ${{ secrets.APP_NAME }}
+
     steps:
       - name: Deployment Started
         run: echo "Deploying Tourist App..."
 
       - name: Deployment Completed
         run: echo "Deployment Success!"
+
+      - name: Print App Name
+        run: echo "$APP_NAME"
+
+    
