@@ -29,10 +29,10 @@ jobs:
       - name: Print Deploy Environment
         run: echo "$DEPLOY_ENV"
 
-      - name: Download Artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: build-output
+    #   - name: Download Artifact
+    #     uses: actions/download-artifact@v4
+    #     with:
+    #       name: build-output
 
-      - name: Read Artifact File
-        run: cat build.txt
+    #   - name: Read Artifact File
+    #     run: cat build.txt
