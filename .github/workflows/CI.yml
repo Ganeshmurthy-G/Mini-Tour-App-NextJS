@@ -68,8 +68,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-        APP_NAME: ${{ secrets.APP_NAME }}
-        DEPLOY_ENV: ${{ secrets.DEPLOY_ENV }}
+      APP_NAME: ${{ secrets.APP_NAME }}
+      DEPLOY_ENV: ${{ secrets.DEPLOY_ENV }}
 
     steps:
       - name: Deployment Started
@@ -83,3 +83,11 @@ jobs:
 
       - name: Print Deploy Environment
         run: echo "$DEPLOY_ENV"
+
+      - name: Download Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-output
+
+      - name: Read Artifact File
+        run: cat build.txt
