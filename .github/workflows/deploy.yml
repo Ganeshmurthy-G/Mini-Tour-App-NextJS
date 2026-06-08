@@ -14,6 +14,7 @@ jobs:
 
     env:
         APP_NAME: ${{ secrets.APP_NAME }}
+        DEPLOY_ENV: ${{ secrets.DEPLOY_ENV }}
 
     steps:
       - name: Deployment Started
@@ -24,5 +25,8 @@ jobs:
 
       - name: Print App Name
         run: echo "$APP_NAME"
+
+      - name: Print Deploy Environment
+        run: echo "$DEPLOY_ENV"
 
     
