@@ -58,9 +58,19 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
 
+    env:
+        APP_NAME: ${{ secrets.APP_NAME }}
+        DEPLOY_ENV: ${{ secrets.DEPLOY_ENV }}
+
     steps:
       - name: Deployment Started
         run: echo "Deploying Tourist App..."
 
       - name: Deployment Completed
         run: echo "Deployment Success!"
+
+      - name: Print App Name
+        run: echo "$APP_NAME"
+
+      - name: Print Deploy Environment
+        run: echo "$DEPLOY_ENV"
