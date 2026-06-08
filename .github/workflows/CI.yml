@@ -53,3 +53,14 @@ jobs:
 
       - run: npm ci
       - run: npm run build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deployment Started
+        run: echo "Deploying Tourist App..."
+
+      - name: Deployment Completed
+        run: echo "Deployment Success!"
