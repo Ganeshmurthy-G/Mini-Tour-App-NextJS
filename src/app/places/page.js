@@ -33,10 +33,6 @@ export default function PlacesPage() {
                 {place.location}
               </p>
 
-              <p className="text-gray-600 mt-2">
-                {place.name},{place.location}
-              </p>
-
               <p>Have a goodtime folks!</p>
 
               <Link
