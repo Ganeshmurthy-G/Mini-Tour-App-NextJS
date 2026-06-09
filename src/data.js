@@ -1,74 +1,74 @@
 export const places = [
     {
         id: 1,
-        name: "Ooty",
-        location: "Tamil Nadu",
+        name: "Ooty Hill Station",
+        location: "The Nilgiris, Tamil Nadu",
         image: "/tour1.jpg"
     },
     {
         id: 2,
-        name: "Kodaikanal",
-        location: "Tamil Nadu",
+        name: "Kodanadu View Point",
+        location: "Kotagiri, The Nilgiris, Tamil Nadu",
         image: "/tour.jpg"
     },
     {
         id: 3,
-        name: "Mysore Palace",
-        location: "Karnataka",
+        name: "Pykara Falls",
+        location: "Ooty, The Nilgiris, Tamil Nadu",
         image: "/tour2.avif"
     },
     {
         id: 4,
-        name: "Ooty",
-        location: "Tamil Nadu",
+        name: "Avalanche Lake",
+        location: "Ooty, The Nilgiris, Tamil Nadu",
         image: "/tour1.jpg"
     },
     {
         id: 5,
-        name: "Kodaikanal",
-        location: "Tamil Nadu",
+        name: "Shooting Spot",
+        location: "Ooty, The Nilgiris, Tamil Nadu",
         image: "/tour.jpg"
     },
     {
         id: 6,
-        name: "Mysore Palace",
-        location: "Karnataka",
+        name: "Catherine Waterfalls",
+        location: "Kotagiri, The Nilgiris, Tamil Nadu",
         image: "/tour2.avif"
     },
     {
         id: 7,
-        name: "Ooty",
-        location: "Tamil Nadu",
+        name: "Kodanadu Tea Estate",
+        location: "Kotagiri, The Nilgiris, Tamil Nadu",
         image: "/tour1.jpg"
     },
     {
         id: 8,
-        name: "Kodaikanal",
-        location: "Tamil Nadu",
+        name: "Botanical Garden",
+        location: "Ooty, The Nilgiris, Tamil Nadu",
         image: "/tour.jpg"
     },
     {
         id: 9,
-        name: "Mysore Palace",
-        location: "Karnataka",
+        name: "Sims Park",
+        location: "Coonoor, The Nilgiris, Tamil Nadu",
         image: "/tour2.avif"
     },
     {
         id: 10,
-        name: "Ooty",
-        location: "Tamil Nadu",
+        name: "Dolphin Nose",
+        location: "Coonoor, The Nilgiris, Tamil Nadu",
         image: "/tour1.jpg"
     },
     {
         id: 11,
-        name: "Kodaikanal",
-        location: "Tamil Nadu",
+        name: "Eagle Adventures",
+        location: "Ooty, The Nilgiris, Tamil Nadu",
         image: "/tour.jpg"
     },
     {
         id: 12,
-        name: "Mysore Palace",
-        location: "Karnataka",
+        name: "Masinagudi",
+        location: "Ooty, The Nilgiris, Tamil Nadu",
         image: "/tour2.avif"
     }
 ];
