@@ -29,16 +29,20 @@ const PlaceDetailPage = async ({ params }) => {
       </h1>
 
       <p className="text-xl text-gray-600 mt-2">
-       📍{place.location}
+        📍{place.location}
       </p>
 
       <div className="mt-2 space-y-2">
         <p>
-          ⭐ Rating: {place.rating?place.rating:"5"}
+          ⭐ Rating: {place.rating ? place.rating : "5"}
+        </p>
+
+        <p className="mt-2">
+          📝 {place.description}
         </p>
 
         <p>
-          🗓 Best Time To Visit: {place.bestTimeToVisit?place.bestTimeToVisit:"Mid-Day"}
+          🗓 Best Time To Visit: {place.besttime ? place.besttime : "Mid-Day"}
         </p>
       </div>
 
