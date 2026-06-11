@@ -5,7 +5,9 @@ export const places = [
         location: "The Nilgiris, Tamil Nadu",
         image: "/ooty.jpg",
         description: "Ooty, also known as Udhagamandalam, A beautiful hill station known for tea gardens, cool weather, and scenic mountain views.",
-        besttime:"October to June — Pleasant weather, ideal for sightseeing and outdoor activities."
+        besttime:"October to June — Pleasant weather, ideal for sightseeing and outdoor activities.",
+        category: "ooty",
+        slug:"ooty-hill-station",
     },
     {
         id: 2,
@@ -13,7 +15,9 @@ export const places = [
         location: "Kotagiri, The Nilgiris, Tamil Nadu",
         image: "/kodanadu.jpg",
         description: "Kodanadu View Point offers, A stunning viewpoint offering panoramic views of valleys, tea estates, and the Eastern Ghats.",
-        besttime:"October to May — Clear skies and comfortable temperatures enhance the scenic experience."
+        besttime:"October to May — Clear skies and comfortable temperatures enhance the scenic experience.",
+        category: "kotagiri",
+        slug:"kodanadu-view-point",
     },
     {
         id: 3,
@@ -21,7 +25,9 @@ export const places = [
         location: "Ooty, The Nilgiris, Tamil Nadu",
         image: "/pykara.jpg",
         description: "Pykara Falls is a picturesque waterfall surrounded by dense forests and greenery, and peaceful natural landscapes.",
-        besttime:"July to February — The falls are at their fullest after the monsoon, and the weather remains pleasant."
+        besttime:"July to February — The falls are at their fullest after the monsoon, and the weather remains pleasant.",
+        category: "ooty",
+        slug:"pykara-falls",
     },
     {
         id: 4,
@@ -29,7 +35,9 @@ export const places = [
         location: "Ooty, The Nilgiris, Tamil Nadu",
         image: "/Avalanche.jpg",
         description: "Avalanche Lake is a serene mountain lake famous for its calm waters and breathtaking surroundings.",
-        besttime:"September to May — Cool weather and clear views make it perfect for nature walks and photography."
+        besttime:"September to May — Cool weather and clear views make it perfect for nature walks and photography.",
+        category: "ooty",
+        slug:"avalanche-lake",
     },
     {
         id: 5,
@@ -37,7 +45,9 @@ export const places = [
         location: "Ooty, The Nilgiris, Tamil Nadu",
         image: "/Shooting.jpg",
         description: "Shooting Spot is a popular filming location known for its vast meadows, pine forests, and scenic beauty.",
-        besttime:"October to June — Pleasant climate and lush greenery create the best experience."
+        besttime:"October to June — Pleasant climate and lush greenery create the best experience.",
+        category: "ooty",
+        slug:"shooting-spot",
     },
     {
         id: 6,
@@ -45,7 +55,9 @@ export const places = [
         location: "Kotagiri, The Nilgiris, Tamil Nadu",
         image: "/Catherine.jpg",
         description: "Catherine Waterfalls is a magnificent double-cascading waterfall nestled amidst tea plantations and forests.",
-        besttime:"July to January — The waterfall is most impressive after the monsoon, with cool and pleasant weather."
+        besttime:"July to January — The waterfall is most impressive after the monsoon, with cool and pleasant weather.",
+        category: "kotagiri",
+        slug: "catherine-waterfalls",
     },
     {
         id: 7,
@@ -53,7 +65,9 @@ export const places = [
         location: "Kotagiri, The Nilgiris, Tamil Nadu",
         image: "/KodanaduTea.jpg",
         description: "Kodanadu Tea Estate is a beautiful tea plantation known for its lush green slopes, fresh mountain air, and scenic views of the Nilgiris",
-        besttime:"October to May — Mild weather and vibrant greenery make it ideal for tea estate visits."
+        besttime:"October to May — Mild weather and vibrant greenery make it ideal for tea estate visits.",
+        category: "kotagiri",
+        slug: "kodanadu-tea-estate",
     },
     {
         id: 8,
@@ -61,7 +75,9 @@ export const places = [
         location: "Ooty, The Nilgiris, Tamil Nadu",
         image: "/Botanical.jpg",
         description: "Botanical Garden is a famous attraction showcasing exotic plants, colorful flowers, and landscaped lawns.",
-        besttime:"April to June — Flower blooms are at their peak, and the annual flower show is a major attraction."
+        besttime:"April to June — Flower blooms are at their peak, and the annual flower show is a major attraction.",
+        category: "ooty",
+        slug: "botanical-garden",
     },
     {
         id: 9,
@@ -69,7 +85,9 @@ export const places = [
         location: "Coonoor, The Nilgiris, Tamil Nadu",
         image: "/Simspark.jpg",
         description: "Sims Park is a beautiful botanical park known for rare plant species and tranquil walking trails.",
-        besttime:"March to June — Pleasant weather and blooming flowers enhance the garden’s beauty."
+        besttime:"March to June — Pleasant weather and blooming flowers enhance the garden’s beauty.",
+        category: "coonoor",
+        slug: "sims-park",
     },
     {
         id: 10,
@@ -77,7 +95,9 @@ export const places = [
         location: "Coonoor, The Nilgiris, Tamil Nadu",
         image: "/Dolphin.jpg",
         description: "Dolphin Nose is a popular viewpoint offering spectacular views of valleys, tea estates, and waterfalls.",
-        besttime:"October to May — Clear visibility and comfortable weather provide the best panoramic views."
+        besttime:"October to May — Clear visibility and comfortable weather provide the best panoramic views.",
+        category: "coonoor",
+        slug:"dolphin-nose",
     },
     {
         id: 11,
@@ -85,7 +105,9 @@ export const places = [
         location: "Ooty, The Nilgiris, Tamil Nadu",
         image: "/Eagle.jpg",
         description: "Eagle Adventures is an exciting destination offering trekking, zip-lining, and outdoor adventure activities.",
-        besttime:"October to May — Pleasant weather is ideal for outdoor adventure activities."
+        besttime:"October to May — Pleasant weather is ideal for outdoor adventure activities.",
+        category: "ooty",
+        slug:"eagle-adventures",
     },
     {
         id: 12,
@@ -93,6 +115,8 @@ export const places = [
         location: "Ooty, The Nilgiris, Tamil Nadu",
         image: "/Masinagudi.jpg",
         description: "Masinagudi is a wildlife getaway known for safari experiences, rich biodiversity, and scenic forest landscapes.",
-        besttime:"October to May — Comfortable weather and better chances of wildlife sightings make it the ideal season."
+        besttime:"October to May — Comfortable weather and better chances of wildlife sightings make it the ideal season.",
+        category: "ooty",
+        slug:"masinagudi",
     }
 ];
