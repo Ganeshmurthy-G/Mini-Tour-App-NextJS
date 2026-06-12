@@ -1,8 +1,14 @@
 import PlaceCard from "@/app/Components/PlaceCard";
-import { places } from "@/data";
+// import { places } from "@/data";
 
 export default async function CategoryPage({ params }) {
     const { location } = await params;
+
+    const response = await fetch(
+        "http://localhost:3000/api/places"
+    );
+
+    const places = await response.json();
 
     const filteredPlaces = places.filter(
         (place) => place.category === location

@@ -2,18 +2,23 @@
 import { useState } from "react";
 import { places } from "@/data";
 import PlaceCard from "../Components/PlaceCard";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 
 export default function PlacesPage() {
-  const [searchQuery, setSearchQuery] = useState("");
+  // const [searchQuery, setSearchQuery] = useState("");
 
   const router = useRouter();
+
+  const searchParams = useSearchParams();
+  const searchQuery = searchParams.get("search") || "";
 
   const filteredPlaces = places.filter(
     (place) =>
       place.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
       place.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
+
+  const categories = [...new Set(places.map(place => place.category))];
 
   return (
     <div className="p-8">
@@ -22,13 +27,23 @@ export default function PlacesPage() {
           Tourist Places
         </h1>
 
+
         <div className="flex gap-5">
 
           <input
             type="text"
             placeholder="Type to search the places"
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
+            // onChange={(e) => setSearchQuery(e.target.value)}
+            onChange={(e) => {
+              const value = e.target.value;
+
+              router.push(
+                value
+                  ? `/places?search=${value}`
+                  : "/places"
+              );
+            }}
             className="w-full md:w-80 lg:w-96 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
@@ -43,9 +58,14 @@ export default function PlacesPage() {
             }}
           >
             <option value="">Select Category</option>
-            <option value="ooty">Ooty</option>
-            <option value="kotagiri">Kotagiri</option>
-            <option value="coonoor">Coonoor</option>
+            {categories.map((category) => (
+              <option
+                key={category}
+                value={category}
+              >
+                {category.charAt(0).toUpperCase() + category.slice(1)}
+              </option>
+            ))}
           </select>
         </div>
       </div>

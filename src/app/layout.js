@@ -18,16 +18,17 @@ export default function RootLayout({ children }) {
           <nav className="flex items-center justify-between p-4 text-blue-900 font-bold">
             <div className="logo font-bold flex items-center">
               <Image
-                src="/logo1.png" // Path relative to the public folder
+                src="/logo1.png"
                 alt="My Company Logo"
-                width={100} // Adjust the width to fit your layout
-                height={20} // Adjust the height to fit your layout
-                priority // Add priority if this is the first image seen (like in a navbar)
+                width={100}
+                height={20}
+                priority
               />
             </div>
             <div className="flex gap-4">
               <Link href="/">Home</Link>
               <Link href="/places">Places</Link>
+              <Link href="/add-place">Add-Place</Link>
             </div>
           </nav>
           {children}
