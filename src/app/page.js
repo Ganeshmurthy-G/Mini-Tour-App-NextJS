@@ -14,9 +14,9 @@ export default function Home() {
       </div>
 
       <div className="relative z-10 flex flex-col items-center justify-center h-[calc(100vh-64px)] text-white" style={{height:"80vh"}}>
-        <h1 className="text-7xl font-bold text-blue-900">MINI TOUR GUIDE</h1>
-        <p className="mt-4 text-xl text-blue-900 font-bold">I will guide you to amazing places </p>
-        <button className="mt-4 bg-orange-400 font-bold">Choose Your Tour</button>
+        <h1 className="text-7xl font-bold text-white bg-blue-500">MINI TOUR GUIDE</h1>
+        <p className="mt-4 text-xl text-white font-bold">I will guide you to amazing places </p>
+        <button className="mt-4 font-bold text-white">Choose Your Tour</button>
       </div>
     </>
   );
