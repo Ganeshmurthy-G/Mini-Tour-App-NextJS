@@ -1,5 +1,6 @@
 import PlaceDetails from "@/app/Components/PlaceDetails";
 import { places } from "@/data";
+import { notFound } from "next/navigation";
 
 export default async function SlugPage({ params }) {
     const { slug } = await params;
@@ -13,6 +14,10 @@ export default async function SlugPage({ params }) {
     const place = places.find(
         (place) => place.slug === slug
     );
+
+    if(!place){
+        notFound();
+    }
 
     return (
         <>

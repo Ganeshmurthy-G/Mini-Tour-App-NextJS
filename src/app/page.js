@@ -14,7 +14,7 @@ export default function Home() {
       </div>
 
       <div className="relative z-10 flex flex-col items-center justify-center h-[calc(100vh-64px)] text-white" style={{height:"80vh"}}>
-        <h1 className="text-7xl font-bold text-white bg-blue-500">MINI TOUR GUIDE</h1>
+        <h1 className="text-7xl font-bold text-white bg-blue-500">{process.env.NEXT_PUBLIC_APP_NAME}</h1>
         <p className="mt-4 text-xl text-white font-bold">I will guide you to amazing places </p>
         <button className="mt-4 font-bold text-white">Choose Your Tour</button>
       </div>
