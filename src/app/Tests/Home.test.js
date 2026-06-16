@@ -6,7 +6,7 @@ describe("Home Page", () => {
     render(<Home />);
 
     expect(
-      screen.getByText("MINI TOUR GUIDE")
+      screen.getByText("Mini Tourist App")
     ).toBeInTheDocument();
   });
 
