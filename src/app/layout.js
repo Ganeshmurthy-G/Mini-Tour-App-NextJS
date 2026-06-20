@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
               <Link href="/">Home</Link>
               <Link href="/places">Places</Link>
               <Link href="/add-place">Add-Place</Link>
+              <Link href="/favorites">Favorites</Link>
             </div>
           </nav>
           {children}
